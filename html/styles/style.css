@@ -1,0 +1,41 @@
+/*
+    Contains all the common styles  
+    for your web application
+*/
+.label{
+    font-weight: bold;
+    padding: 5px;
+    color: grey;
+}
+
+.info{
+    padding: 5px;
+    font-size: 24px;
+}
+
+.header{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: 28px;
+}
+
+
+.ctrl-text input[type="text"], .ctrl-select select, .ctrl-submit input[type="submit"] { 
+    padding: 8px;
+    border: 1px solid  #bdc7d8;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.ctrl-submit{
+    padding-top: 5px;
+}
+
+.ctrl-submit input[type="submit"] {
+    width: 250px;
+}
+
+.header a{
+    font-size: 14px;
+}
+

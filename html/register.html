@@ -1,0 +1,64 @@
+<!doctype html>
+<html> 
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <script>  
+            function validate(){
+                //alert("This is a validate function");
+                //1. get the firstname textbox control  
+                var txtFirstname = document.getElementById("txtFirstname"); 
+                if(txtFirstname.value === "")
+                {
+                    alert("Enter firstname");
+                }
+            }
+        </script>
+    </head> 
+    <body> 
+        <div id="main-container">
+             <div class="header">
+                 Register <a href="profile.html">Go to my profile</a>
+             </div>
+            <div>
+                <div class="label">
+                        Firstname:
+                </div> 
+                <div class="ctrl-text">
+                    <input type="text" id="txtFirstname">
+                </div>
+            </div>
+             <div>
+                 <div class="label">
+                    LastName: 
+                 </div>
+                 <div class="ctrl-text">
+                    <input type="text" id="txtLastname">
+                 </div>
+             </div>
+             <div>
+                 <div class="label">
+                    Age: 
+                 </div>
+                 <div class="ctrl-text">
+                    <input type="text" id="txtAge"> 
+                 </div>
+            </div>
+            <div>
+                <div class="label">
+                    Gender: 
+                </div>
+                <div class="ctrl-select">
+                    <select id="selGender">
+                        <option value="-1" selected="true">Nothing Selected</option>
+                        <option value="0">Female</option>
+                        <option value="1">Male</option>
+                    </select>
+                </div>
+                <div class="ctrl-submit">
+                    <input type="submit" value="Register" onclick="validate()"/>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
